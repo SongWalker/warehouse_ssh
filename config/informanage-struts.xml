@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/> 
+	<constant name="struts.action.extension" value="action" /> 
+	<constant name="struts.objectFactory" value="spring" /> 
+	
+	<package name="customer" namespace="/customer" extends="struts-default">
+	 	<action name="list" class="customerAction" method="list">  
+            <result name="list">/inforManage/customer/customerMess.jsp</result>  
+        </action>  
+        
+        <action name="add" class="customerAction" method="add">  
+            <result name="list">/inforManage/customer/customerMess.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="customerAction" method="tomodify">  
+            <result name="tomodify">/inforManage/customer/modifyCustomer.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="customerAction" method="modify">  
+            <result name="list">/inforManage/customer/customerMess.jsp</result>  
+        </action>   
+	</package>
+	<package name="goods" namespace="/goods" extends="struts-default">
+	 	<action name="list" class="goodsAction" method="list">  
+            <result name="list">/inforManage/goods/goodsMess.jsp</result>  
+        </action>  
+        
+        <action name="add" class="goodsAction" method="add">  
+            <result name="list">/inforManage/goods/goodsMess.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="goodsAction" method="tomodify">  
+            <result name="tomodify">/inforManage/goods/modifyGoods.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="goodsAction" method="modify">  
+            <result name="list">/inforManage/goods/goodsMess.jsp</result>  
+        </action>   
+	</package>
+	
+	
+	<package name="goodsType" namespace="/goodsType" extends="struts-default">
+	 	<action name="list" class="goodsTypeAction" method="list">  
+            <result name="list">/inforManage/goodsType/goodsTypeMess.jsp</result>  
+        </action>  
+        
+        <action name="add" class="goodsTypeAction" method="add">  
+            <result name="list">/inforManage/goodsType/goodsTypeMess.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="goodsTypeAction" method="tomodify">  
+            <result name="tomodify">/inforManage/goodsType/modifyGoodsType.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="goodsTypeAction" method="modify">  
+            <result name="list">/inforManage/goodsType/goodsTypeMess.jsp</result>  
+        </action>   
+	</package>
+	
+	<package name="client" namespace="/client" extends="struts-default">
+	 	<action name="list" class="clientAction" method="list">  
+            <result name="list">/inforManage/client/clientMess.jsp</result>  
+        </action>  
+        
+        <action name="add" class="clientAction" method="add">  
+            <result name="list">/inforManage/client/clientMess.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="clientAction" method="tomodify">  
+            <result name="tomodify">/inforManage/client/modifyClient.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="clientAction" method="modify">  
+            <result name="list">/inforManage/client/clientMess.jsp</result>  
+        </action>   
+	</package>
+	
+	<package name="supplier" namespace="/supplier" extends="struts-default">
+	 	<action name="list" class="supplierAction" method="list">  
+            <result name="list">/inforManage/supplier/supplierMess.jsp</result>  
+        </action>  
+        
+        <action name="add" class="supplierAction" method="add">  
+            <result name="list">/inforManage/supplier/supplierMess.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="supplierAction" method="tomodify">  
+            <result name="tomodify">/inforManage/supplier/modifySupplier.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="supplierAction" method="modify">  
+            <result name="list">/inforManage/supplier/supplierMess.jsp</result>  
+        </action>   
+	</package>
+	</struts>  

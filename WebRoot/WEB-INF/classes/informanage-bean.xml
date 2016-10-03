@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="customerDao" class="edu.team4.warehouse.informanage.dao.impl.customerDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="customerService" class="edu.team4.warehouse.informanage.services.impl.customerService">
+		<property name="dao" ref="customerDao"></property>
+	</bean>
+
+	<bean id="customerAction" class="edu.team4.warehouse.informanage.actions.customerAction"
+		scope="prototype">
+		<property name="service" ref="customerService"></property>
+	</bean>
+	
+	
+	
+	
+	<bean id="goodsDao" class="edu.team4.warehouse.informanage.dao.impl.goodsDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="goodsService" class="edu.team4.warehouse.informanage.services.impl.goodsService">
+		<property name="dao" ref="goodsDao"></property>
+	</bean>
+
+	<bean id="goodsAction" class="edu.team4.warehouse.informanage.actions.goodsAction"
+		scope="prototype">
+		<property name="service" ref="goodsService"></property>
+	</bean>
+	
+	
+	
+	<bean id="goodsTypeDao" class="edu.team4.warehouse.informanage.dao.impl.goodsTypeDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="goodsTypeService" class="edu.team4.warehouse.informanage.services.impl.goodsTypeService">
+		<property name="dao" ref="goodsTypeDao"></property>
+	</bean>
+
+	<bean id="goodsTypeAction" class="edu.team4.warehouse.informanage.actions.goodsTypeAction"
+		scope="prototype">
+		<property name="service" ref="goodsTypeService"></property>
+	</bean>
+	
+	
+	<bean id="clientDao" class="edu.team4.warehouse.informanage.dao.impl.clientDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="clientService" class="edu.team4.warehouse.informanage.services.impl.clientService">
+		<property name="dao" ref="clientDao"></property>
+	</bean>
+
+	<bean id="clientAction" class="edu.team4.warehouse.informanage.actions.clientAction"
+		scope="prototype">
+		<property name="service" ref="clientService"></property>
+	</bean>
+	
+	<bean id="supplierDao" class="edu.team4.warehouse.informanage.dao.impl.supplierDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="supplierService" class="edu.team4.warehouse.informanage.services.impl.supplierService">
+		<property name="dao" ref="supplierDao"></property>
+	</bean>
+
+	<bean id="supplierAction" class="edu.team4.warehouse.informanage.actions.supplierAction"
+		scope="prototype">
+		<property name="service" ref="supplierService"></property>
+	</bean>
+</beans>

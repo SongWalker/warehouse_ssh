@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.action.extension" value="action" />
+	<constant name="struts.objectFactory" value="spring" />
+
+	<package name="store" namespace="/store" extends="struts-default">
+		<action name="list" class="storeactions" method="list">
+			<result name="list">/store_return/store/store_main/liststore.jsp
+			</result>
+		</action>
+
+		<action name="add" class="storeactions" method="add">
+			<result name="list">/store_return/store/store_main/liststore.jsp
+			</result>
+		</action>
+
+		<action name="alist" class="storeactions" method="alist">
+			<result name="alist">/store_return/store/store_main/addstore.jsp
+			</result>
+		</action>
+
+		<action name="tomodify" class="storeactions" method="tomodify">
+			<result name="tomodify">/store_return/store/store_main/modifystore.jsp
+			</result>
+		</action>
+
+		<action name="modify" class="storeactions" method="modify">
+			<result name="list">/store_return/store/store_main/liststore.jsp
+			</result>
+		</action>
+
+		<action name="listd" class="storeactions" method="listd">
+			<result name="listd">/store_return/store/store_detail/liststoredetails.jsp
+			</result>
+		</action>
+
+		<action name="adddetail" class="storeactions" method="adddetail">
+			<result name="listd">/store_return/store/store_detail/liststoredetails.jsp
+			</result>
+		</action>
+
+		<action name="alistd" class="storeactions" method="alistd">
+			<result name="alistd">/store_return/store/store_detail/addstoredetails.jsp
+			</result>
+		</action>
+
+		<action name="dtomodify" class="storeactions" method="dtomodify">
+			<result name="dtomodify">/store_return/store/store_detail/modifystoredetails.jsp
+			</result>
+		</action>
+
+		<action name="dmodify" class="storeactions" method="dmodify">
+			<result name="listd">/store_return/store/store_detail/liststoredetails.jsp
+			</result>
+		</action>
+
+
+
+		<action name="listr" class="storeactions" method="listr">
+			<result name="listr">/store_return/return/return_main/liststreturn.jsp
+			</result>
+		</action>
+
+		<action name="addr" class="storeactions" method="addr">
+			<result name="listr">/store_return/return/return_main/liststreturn.jsp
+			</result>
+		</action>
+
+		<action name="alistr" class="storeactions" method="alist">
+			<result name="alist">/store_return/return/return_main/addstreturn.jsp
+			</result>
+		</action>
+
+		<action name="tomodifyr" class="storeactions" method="tomodifyr">
+			<result name="tomodifyr">/store_return/return/return_main/modifystreturn.jsp
+			</result>
+		</action>
+
+		<action name="modifyr" class="storeactions" method="modifyr">
+			<result name="listr">/store_return/return/return_main/liststreturn.jsp
+			</result>
+		</action>
+
+		<action name="listrd" class="storeactions" method="listrd">
+			<result name="listrd">/store_return/return/return_detail/liststreturndetails.jsp
+			</result>
+		</action>
+
+		<action name="addrdetail" class="storeactions" method="addrdetail">
+			<result name="listrd">/store_return/return/return_detail/liststreturndetails.jsp
+			</result>
+		</action>
+
+		<action name="alistrd" class="storeactions" method="alistd">
+			<result name="alistd">/store_return/return/return_detail/addstreturndetails.jsp
+			</result>
+		</action>
+
+		<action name="dtomodifyr" class="storeactions" method="dtomodifyr">
+			<result name="dtomodifyr">/store_return/return/return_detail/modifystreturndetails.jsp
+			</result>
+		</action>
+
+		<action name="dmodifyr" class="storeactions" method="dmodifyr">
+			<result name="listrd">/store_return/return/return_detail/liststreturndetails.jsp
+			</result>
+		</action>
+	</package>
+
+	<package name="sell" namespace="/sell" extends="struts-default">
+		<action name="list" class="sellactions" method="list">
+			<result name="list">/sell_return/sell/sell_main/listsell.jsp</result>
+		</action>
+
+		<action name="add" class="sellactions" method="add">
+			<result name="list">/sell_return/sell/sell_main/listsell.jsp</result>
+		</action>
+
+		<action name="alist" class="sellactions" method="alist">
+			<result name="alist">/sell_return/sell/sell_main/addsell.jsp</result>
+		</action>
+
+		<action name="tomodify" class="sellactions" method="tomodify">
+			<result name="tomodify">/sell_return/sell/sell_main/modifysell.jsp
+			</result>
+		</action>
+
+		<action name="modify" class="sellactions" method="modify">
+			<result name="list">/sell_return/sell/sell_main/listsell.jsp</result>
+		</action>
+
+		<action name="listd" class="sellactions" method="listd">
+			<result name="listd">/sell_return/sell/sell_detail/listselldetails.jsp
+			</result>
+		</action>
+
+		<action name="adddetail" class="sellactions" method="adddetail">
+			<result name="listd">/sell_return/sell/sell_detail/listselldetails.jsp
+			</result>
+		</action>
+
+		<action name="alistd" class="sellactions" method="alistd">
+			<result name="alistd">/sell_return/sell/sell_detail/addselldetails.jsp
+			</result>
+		</action>
+
+		<action name="dtomodify" class="sellactions" method="dtomodify">
+			<result name="dtomodify">/sell_return/sell/sell_detail/modifyselldetails.jsp
+			</result>
+		</action>
+
+		<action name="dmodify" class="sellactions" method="dmodify">
+			<result name="listd">/sell_return/sell/sell_detail/listselldetails.jsp
+			</result>
+		</action>
+
+
+
+		<action name="listr" class="sellactions" method="listr">
+			<result name="listr">/sell_return/return/return_main/listsereturn.jsp
+			</result>
+		</action>
+
+		<action name="addr" class="sellactions" method="addr">
+			<result name="listr">/sell_return/return/return_main/listsereturn.jsp
+			</result>
+		</action>
+
+		<action name="alistr" class="sellactions" method="alist">
+			<result name="alist">/sell_return/return/return_main/addsereturn.jsp
+			</result>
+		</action>
+
+		<action name="tomodifyr" class="sellactions" method="tomodifyr">
+			<result name="tomodifyr">/sell_return/return/return_main/modifysereturn.jsp
+			</result>
+		</action>
+
+		<action name="modifyr" class="sellactions" method="modifyr">
+			<result name="listr">/sell_return/return/return_main/listsereturn.jsp
+			</result>
+		</action>
+
+		<action name="listrd" class="sellactions" method="listrd">
+			<result name="listrd">/sell_return/return/return_detail/listsereturndetails.jsp
+			</result>
+		</action>
+
+		<action name="addrdetail" class="sellactions" method="addrdetail">
+			<result name="listrd">/sell_return/return/return_detail/listsereturndetails.jsp
+			</result>
+		</action>
+
+		<action name="alistrd" class="sellactions" method="alistd">
+			<result name="alistd">/sell_return/return/return_detail/addsereturndetails.jsp
+			</result>
+		</action>
+
+		<action name="dtomodifyr" class="sellactions" method="dtomodifyr">
+			<result name="dtomodifyr">/sell_return/return/return_detail/modifysereturndetails.jsp
+			</result>
+		</action>
+
+		<action name="dmodifyr" class="sellactions" method="dmodifyr">
+			<result name="listrd">/sell_return/return/return_detail/listsereturndetails.jsp
+			</result>
+		</action>
+	</package>
+
+	<include file="inventory-struts.xml"></include>
+	<include file="informanage-struts.xml"></include>
+	<include file="login-struts.xml"></include>
+</struts>    

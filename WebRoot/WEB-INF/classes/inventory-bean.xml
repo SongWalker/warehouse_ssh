@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="inventoryDao" class="edu.team4.warehouse.inventory.dao.impl.inventoryDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="inventoryService"
+		class="edu.team4.warehouse.inventory.services.impl.inventoryService">
+		<property name="dao" ref="inventoryDao"></property>
+	</bean>
+
+	<bean id="inventoryAction" class="edu.team4.warehouse.inventory.actions.inventoryAction"
+		scope="prototype">
+		<property name="service" ref="inventoryService"></property>
+	</bean>
+	
+	<bean id="recordDao" class="edu.team4.warehouse.inventory.dao.impl.recordDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="recordService"
+		class="edu.team4.warehouse.inventory.services.impl.recordService">
+		<property name="dao" ref="recordDao"></property>
+	</bean>
+
+	<bean id="recordAction" class="edu.team4.warehouse.inventory.actions.recordAction"
+		scope="prototype">
+		<property name="service" ref="recordService"></property>
+	</bean>
+
+</beans>

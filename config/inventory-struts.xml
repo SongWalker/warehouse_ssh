@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/> 
+	<constant name="struts.action.extension" value="action" /> 
+	<constant name="struts.objectFactory" value="spring" /> 
+	
+	<package name="inventory" namespace="/inventory" extends="struts-default">
+	 	<action name="list" class="inventoryAction" method="list">  
+            <result name="list">/inventory/inventory/inventoryList.jsp</result>  
+        </action> 
+        
+        <action name="add" class="inventoryAction" method="add">  
+            <result name="list">/inventory/inventory/inventoryList.jsp</result>  
+        </action>  
+        
+        <action name="tomodify" class="inventoryAction" method="tomodify">  
+            <result name="tomodify">/inventory/inventory/modifyInventory.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="inventoryAction" method="modify">  
+            <result name="list">/inventory/inventory/inventoryList.jsp</result>  
+        </action>      
+	</package>
+	
+	<package name="record" namespace="/record" extends="struts-default">
+	 	<action name="list" class="recordAction" method="list">  
+            <result name="list">/inventory/record/recordList.jsp</result>  
+        </action> 
+        <action name="add" class="recordAction" method="add">  
+            <result name="list">/inventory/record/recordList.jsp</result>  
+        </action>  
+        <action name="tomodify" class="recordAction" method="tomodify">  
+            <result name="tomodify">/inventory/record/modifyRecord.jsp</result>  
+        </action> 
+        
+        <action name="modify" class="recordAction" method="modify">  
+            <result name="list">/inventory/record/recordList.jsp</result>  
+        </action> 
+        
+	</package>
+	
+	
+</struts>   
