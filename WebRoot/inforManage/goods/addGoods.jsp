@@ -105,8 +105,7 @@
 	<body>
 		<div id="leftSide">
 			<div class="logo">
-				<img src="images/logo.png"
-						alt="" />
+				<img src="images/logo.png" alt="" />
 				</a>
 			</div>
 			<!-- fjdskfjdkfd -->
@@ -309,8 +308,7 @@
 					<div class="middleNav">
 						<ul>
 							<li class="mUser">
-								<a title=""><span class="users"></span>
-								</a>
+								<a title=""><span class="users"></span> </a>
 								<ul class="mSub1">
 								</ul>
 							</li>
@@ -331,9 +329,9 @@
 				</table>
 
 				<form method="post" action="<%=basePath%>goods/add.action">
-				<!-- Dynamic table -->
-				<div class="widget">
-					
+					<!-- Dynamic table -->
+					<div class="widget">
+
 						<div class="title">
 							<img src="images/icons/dark/frames.png" alt="" class="titleIcon" />
 							<h6>
@@ -341,117 +339,135 @@
 							</h6>
 						</div>
 
-						<table  width="100%" >
-								<tr>
-									<td style="width: 30%; text-align: right">商品ID</td>
-									<td>
-										<input type="text" name="tbgoods.gtID" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										商品类别
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GGtname" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										商品名称
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GName" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										商品简称
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GSname" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										产地
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GOrigin" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										单位
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GUnit" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										规格
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GStandard" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										包装
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GPack" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										批号
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GNo" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										批准号
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GNumber" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										评分
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GRemark" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										供应商
-									</td>
-									<td>
-										<input type="text" name="tbgoods.GSname" />
-									</td>
-								</tr>
-								<tr>
-									<td style="width: 30%; text-align: right">
-										备注
-									</td>
-									<td>
-										<select name="tbgoods.GState" >
-                                    		<option value="1">
-                                        		可用
-                                    		</option>
-                                    		<option value="0">
-		                                        不可用
-		                                    </option>
-                       			 		</select>
-									</td>	 
-								</tr>
+						<table width="100%">
+							<tr>
+								<td style="width: 30%; text-align: right">
+									商品ID
+								</td>
+								<td>
+									<input type="text" name="tbgoods.gtID" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									商品类别
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GGtname" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									商品名称
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GName" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									商品简称
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GSname" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									产地
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GOrigin" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									单位
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GUnit" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									规格
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GStandard" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									包装
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GPack" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									批号
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GNo" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									批准号
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GNumber" />
+								</td>
+							</tr>
+							<tr>
+								<td style="width: 30%; text-align: right">
+									评分
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GRemark" />
+								</td>
+								
+							</tr>
+							 	<tr>
+								<td style="width: 30%; text-align: right">
+									供应商
+								</td>
+								<td>
+									<input type="text" name="tbgoods.GSname" />
+								</td>
+							</tr>
+							<tr>   
+                         
+						<!-- 	<tr>
+								<td style="width: 30%; text-align: right">
+									供应商：
+								</td>
+								<td>
+									<select name="tbgoods.GSname">
+										<s:iterator value="#request.slist" var="item">
+											<option value="${item.SName}">${item.SName}</option>																							
+										</s:iterator>
+									</select>
+								</td>
+							</tr>
+							-->
 
+							<tr>
+								<td style="width: 30%; text-align: right">
+									备注
+								</td>
+								<td>
+									<select name="tbgoods.GState">
+										<option value="1">
+											可用
+										</option>
+										<option value="0">
+											不可用
+										</option>
+									</select>
+								</td>
+							</tr>
 						</table>
 
 						<td>
@@ -459,9 +475,9 @@
 							<a href="<%=basePath%>goods/list.action">返回</a>
 						</td>
 						<!--onclick方法调用-->
-						
-						
-						</div>
+
+
+					</div>
 				</form>
 
 

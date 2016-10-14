@@ -14,13 +14,13 @@
             <column name="gt_id" />
         </property>
         <property name="GNo" type="java.lang.String">
-            <column name="g_no" length="50" not-null="true" />
+            <column name="g_no" length="50" />
         </property>
         <property name="GGtname" type="java.lang.String">
-            <column name="g_gtname" length="50" not-null="true" />
+            <column name="g_gtname" length="50" />
         </property>
         <property name="GName" type="java.lang.String">
-            <column name="g_name" length="50" not-null="true" />
+            <column name="g_name" length="50" />
         </property>
         <property name="GShname" type="java.lang.String">
             <column name="g_shname" length="50" />
@@ -29,10 +29,10 @@
             <column name="g_origin" length="60" />
         </property>
         <property name="GUnit" type="java.lang.String">
-            <column name="g_unit" length="50" not-null="true" />
+            <column name="g_unit" length="50" />
         </property>
         <property name="GStandard" type="java.lang.String">
-            <column name="g_standard" length="50" not-null="true" />
+            <column name="g_standard" length="50" />
         </property>
         <property name="GPack" type="java.lang.String">
             <column name="g_pack" length="50" />
@@ -50,7 +50,7 @@
             <column name="g_sname" length="100" />
         </property>
         <property name="GState" type="java.lang.Integer">
-            <column name="g_state" not-null="true" />
+            <column name="g_state" />
         </property>
     </class>
 </hibernate-mapping>

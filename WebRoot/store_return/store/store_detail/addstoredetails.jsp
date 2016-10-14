@@ -350,10 +350,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 30%; text-align: right">
-					<input type="hidden" name="sd.smIds" value="${sd.smIds}"/>
 				</td>
-				<td>
+				<td>			    
 					<input type="submit" value="提交" />
 					<a href="<%=basePath%>store/list.action">返回</a>
 				</td>

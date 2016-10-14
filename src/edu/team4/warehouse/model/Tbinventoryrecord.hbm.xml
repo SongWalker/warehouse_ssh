@@ -14,25 +14,25 @@
             <column name="i_id" />
         </property>
         <property name="idNo" type="java.lang.String">
-            <column name="id_no" length="30" not-null="true" />
+            <column name="id_no" length="30" />
         </property>
         <property name="idGname" type="java.lang.String">
-            <column name="id_gname" length="50" not-null="true" />
+            <column name="id_gname" length="50" />
         </property>
         <property name="idUnit" type="java.lang.String">
-            <column name="id_unit" length="10" not-null="true" />
+            <column name="id_unit" length="10" />
         </property>
         <property name="idNum" type="java.lang.Integer">
-            <column name="id_num" not-null="true" />
+            <column name="id_num" />
         </property>
         <property name="idDate" type="java.sql.Timestamp">
-            <column name="id_date" length="19" not-null="true" />
+            <column name="id_date" length="19" />
         </property>
         <property name="idDes" type="java.lang.String">
             <column name="id_des" length="100" />
         </property>
         <property name="idState" type="java.lang.Integer">
-            <column name="id_state" not-null="true" />
+            <column name="id_state" />
         </property>
     </class>
 </hibernate-mapping>

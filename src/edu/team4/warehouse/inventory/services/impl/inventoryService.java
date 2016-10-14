@@ -32,6 +32,7 @@ public String add(Tbinventory inventory) {
 	return dao.add(inventory);
 }
 
+
 /**
  * 读取库存信息条目
  */

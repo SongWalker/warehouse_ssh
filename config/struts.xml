@@ -4,6 +4,9 @@
 	<constant name="struts.i18n.encoding" value="UTF-8" />
 	<constant name="struts.action.extension" value="action" />
 	<constant name="struts.objectFactory" value="spring" />
+	
+		
+
 
 	<package name="store" namespace="/store" extends="struts-default">
 		<action name="list" class="storeactions" method="list">

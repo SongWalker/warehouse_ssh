@@ -4,4 +4,5 @@
 <hibernate-reverse-engineering>
 	<table name="man" catalog="test"></table>
 	<table name="tbgoodstype" catalog="dbware"></table>
+	<table name="recruit_tb" catalog="easyjob"></table>
 </hibernate-reverse-engineering>

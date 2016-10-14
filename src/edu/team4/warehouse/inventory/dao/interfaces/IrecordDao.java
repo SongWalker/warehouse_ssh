@@ -9,5 +9,5 @@ public interface IrecordDao {
 	public String add(Tbinventoryrecord record);
 	public Tbinventoryrecord detail(Tbinventoryrecord record);
 	public String modify(Tbinventoryrecord record);
-
+   public void addNew(Tbinventoryrecord record);
 }

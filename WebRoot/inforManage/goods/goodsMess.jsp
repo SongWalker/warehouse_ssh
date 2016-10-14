@@ -297,11 +297,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         
         <form method="post" action="<%=basePath%>goods/list.action">
         <table style="align:center">
-              输入条件(商品名/商品ID/供应商): <input type="text" name="chaxun" size="18" />
+              输入条件(商品名): <input type="text" name="tbgoods.GName" value="${tbgoods.GName}" />
         <input type="submit"  value="查询"/>
-            <a href="<%=basePath%>inforManage/goods/addGoods.jsp">添加</a>
+            <a href="<%=basePath%>goods/alist.action">添加</a>
             </table>
-            </form>
+            
             
 
 
@@ -312,8 +312,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <thead>
                     <tr>
                     <th>序列号</th>
-                    <th>类别ID</th>
-                    <th>类别名称</th>
+                 <!--     <th>类别ID</th>         -->
+                    <th>商品类别</th>
                     <th>商品名称</th>
                     <th>商品简称</th>
                     <th>产地</th>
@@ -324,22 +324,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <th>批准号</th>
                     <th>评分</th>
                     <th>供应商</th>
-                    <th>备注</th>
+                    <th>状态</th>
                     </tr>
                 </thead>
                 <tbody>
             <s:iterator value="#request.list" var="item">                                          <!--方法没写-->
                 <tr>
                     <th>${item.GId}</th>
-                    <th>${item.gtId}</th>
+             <!--    <th>${item.gtId}</th>          -->     
                     <th>${item.GGtname}</th>
                     <th>${item.GName}</th>
-                    <th>${item.GSname}</th>
+                    <th>${item.GShname}</th>
                     <th>${item.GOrigin}</th>
                     <th>${item.GUnit}</th>
                     <th>${item.GStandard}</th>
                     <th>${item.GPack}</th>
-                    <th>${item.GBnumber}</th>
+                    <th>${item.GNo}</th>
                     <th>${item.GNumber}</th>
                     <th>${item.GRemark}</th>
                     <th>${item.GSname}</th>
@@ -350,7 +350,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </tbody>
             </table>   
         </div>
-    
+    </form>
     </div>
     
     <!-- Footer line -->

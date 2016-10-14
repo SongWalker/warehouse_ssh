@@ -4,10 +4,33 @@
 	<constant name="struts.i18n.encoding" value="UTF-8" />
 	<constant name="struts.action.extension" value="action" />
 	<constant name="struts.objectFactory" value="spring" />
-	<package name="login" namespace="/login" extends="struts-default">
+	 
+	
+	<package name="login" extends="struts-default">	
+    <!--  <interceptors>  
+        <interceptor name="LogInterceptor" class="edu.team4.warehouse.Util.LogInterceptor"></interceptor>  
+        <interceptor-stack name="defaultinter"> 
+                <interceptor-ref name="defaultStack" />   
+                <interceptor-ref name="LogIntercepter" />                              
+        </interceptor-stack> 
+    </interceptors>  
+   <default-interceptor-ref name="defaultinter"></default-interceptor-ref> 
+     -->
+        
+        <!--  <global-results>  
+            <result name="login">/login/login.jsp</result>  
+        </global-results> 
+        -->
+        
+        <interceptors>  
+        <interceptor name="LogInterceptor" class="edu.team4.warehouse.Util.LogInterceptor"></interceptor>  
+        </interceptors>  
+        
+    
 		<action name="login" class="loginactions" method="CheckUId">
 			<result name="login">/index.jsp</result>
-			<result name="uncess">login.jsp</result>
+			<result name="uncess">/login/login.jsp</result>
+			<!--  <interceptor-ref name="LogInterceptor"></interceptor-ref>  -->
 		</action>
 	</package>
 </struts>   

@@ -1,7 +1,7 @@
 package edu.team4.warehouse.storereturn.services.implement;
 
 import java.util.List;
-
+import edu.team4.warehouse.inventory.services.interfaces.IrecordService;
 import edu.team4.warehouse.model.Tbgoodsinfo;
 import edu.team4.warehouse.model.Tbstoredetail;
 import edu.team4.warehouse.model.Tbstoremain;
@@ -15,6 +15,17 @@ import edu.team4.warehouse.storereturn.services.interfaces.Istoreservices;
 public class storeservices implements Istoreservices {
 
 	private Istoredao dao;
+	private IrecordService recordService;
+	
+
+	public IrecordService getRecordService() {
+		return recordService;
+	}
+
+	public void setRecordService(IrecordService recordService) {
+		this.recordService = recordService;
+	}
+
 	public Istoredao getDao() {
 		return dao;
 	}
@@ -65,10 +76,12 @@ public class storeservices implements Istoreservices {
 		return dao.listd(sd);
 	}
 	/*
-	 * 加进货单详情
+	 * 加进货单详情,同时增加一条入库记录
 	 */
+	@SuppressWarnings("finally")
 	public String adddetail(Tbstoredetail sd) {
 		return dao.adddetail(sd);
+		
 	}
 	/*
 	 * 查商品号作下拉框

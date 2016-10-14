@@ -330,7 +330,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
               <a href="<%=basePath%>store/tomodify.action?store.smIds=${item.smIds}">修改</a>
             </td>
             <td>
-              <a href="<%=basePath%>store/alistd.action?sd.smIds=${item.smIds}&sd.sdNo=${item.smNo}">添加订单详情</a>
+              <a href="<%=basePath%>store/alistd.action?sd.sdNo=${item.smNo}">添加订单详情</a>
             </td>
           </tr>
         </s:iterator>

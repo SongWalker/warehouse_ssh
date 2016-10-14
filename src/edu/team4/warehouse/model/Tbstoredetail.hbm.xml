@@ -14,19 +14,19 @@
             <column name="sm_ids" />
         </property>
         <property name="sdNo" type="java.lang.String">
-            <column name="sd_no" length="30" not-null="true" />
+            <column name="sd_no" length="30" />
         </property>
         <property name="sdGid" type="java.lang.String">
-            <column name="sd_gid" length="50" not-null="true" />
+            <column name="sd_gid" length="50" />
         </property>
         <property name="sdUprice" type="java.lang.Float">
-            <column name="sd_uprice" precision="8" not-null="true" />
+            <column name="sd_uprice" precision="8" />
         </property>
         <property name="sdNumber" type="java.lang.Integer">
-            <column name="sd_number" not-null="true" />
+            <column name="sd_number" />
         </property>
         <property name="sdState" type="java.lang.Integer">
-            <column name="sd_state" not-null="true" />
+            <column name="sd_state" />
         </property>
     </class>
 </hibernate-mapping>

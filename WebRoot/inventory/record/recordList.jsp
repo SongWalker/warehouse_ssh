@@ -306,7 +306,7 @@
 				<div class="wrapper">
 					<div class="pageTitle">
 						<h5>
-							库存查询
+							入库/出库记录
 						</h5>
 					</div>
 					<div class="middleNav">

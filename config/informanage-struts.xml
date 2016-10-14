@@ -38,6 +38,11 @@
         <action name="modify" class="goodsAction" method="modify">  
             <result name="list">/inforManage/goods/goodsMess.jsp</result>  
         </action>   
+        
+        <action name="alist" class="goodsAction" method="alist">
+			<result name="alist">/inforManage/goods/addGoods.jsp
+			</result>
+		</action>
 	</package>
 	
 	

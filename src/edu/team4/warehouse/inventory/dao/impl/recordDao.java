@@ -20,12 +20,16 @@ public class recordDao extends HibernateDaoSupport implements IrecordDao {
 		else{
 			return this.getHibernateTemplate().find(sb.toString());
 		}*/
-		if(record.getIdNo()==null || record.getIdNo().equals("")){
+		if((record.getIdNo()==null || record.getIdNo().equals(""))&&(record.getIdDate()==null || record.getIdDate().toString().equals(""))){
 			return this.getHibernateTemplate().find(sb.toString());
 		}
 		else if(record.getIdDate()==null || record.getIdDate().toString().equals("")){
 			sb.append(" where r.idNo like ?");
 			return this.getHibernateTemplate().find(sb.toString(),record.getIdNo()+"%");
+		}
+		else if(record.getIdNo()==null || record.getIdNo().equals("")){
+			sb.append(" where r.idDate like ?");
+			return this.getHibernateTemplate().find(sb.toString(), record.getIdDate());
 		}
 		else{
 			sb.append(" where r.idNo like ? and r.idDate like ?");
@@ -36,6 +40,10 @@ public class recordDao extends HibernateDaoSupport implements IrecordDao {
 	public String add(Tbinventoryrecord record) {
 		this.getHibernateTemplate().save(record);
 		return "list";
+	}
+	
+	public void addNew(Tbinventoryrecord record) {
+		this.getHibernateTemplate().save(record);
 	}
 
 	public Tbinventoryrecord detail(Tbinventoryrecord record) {

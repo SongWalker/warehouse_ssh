@@ -22,16 +22,6 @@ public class Tbstoredetail implements java.io.Serializable {
 	public Tbstoredetail() {
 	}
 
-	/** minimal constructor */
-	public Tbstoredetail(String sdNo, String sdGid, Float sdUprice,
-			Integer sdNumber, Integer sdState) {
-		this.sdNo = sdNo;
-		this.sdGid = sdGid;
-		this.sdUprice = sdUprice;
-		this.sdNumber = sdNumber;
-		this.sdState = sdState;
-	}
-
 	/** full constructor */
 	public Tbstoredetail(Integer smIds, String sdNo, String sdGid,
 			Float sdUprice, Integer sdNumber, Integer sdState) {

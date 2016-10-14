@@ -6,6 +6,7 @@ import org.springframework.dao.support.DaoSupport;
 import edu.team4.warehouse.informanage.dao.interfaces.IGoodsDao;
 import edu.team4.warehouse.informanage.services.interfaces.IGoodsService;
 import edu.team4.warehouse.model.Tbgoodsinfo;
+import edu.team4.warehouse.model.Tbsupplier;
 
 public class goodsService implements IGoodsService {
 private IGoodsDao dao;
@@ -28,14 +29,21 @@ public void setDao(IGoodsDao dao) {
 		return dao.detail(tbgoods);
 	}
 
-	public List<Tbgoodsinfo> list(Tbgoodsinfo tbgoods,String chaxun) {
+	public List<Tbgoodsinfo> list(Tbgoodsinfo tbgoods) {
 		
-		return dao.list(tbgoods,chaxun) ;
+		return dao.list(tbgoods) ;
 	}
 
 	public String modify(Tbgoodsinfo tbgoods) {
 		
 		return dao.modify(tbgoods);
+	}
+
+	/*
+	 * 查询供应商作下拉框
+	 */
+	public List<Tbsupplier> slist(Tbsupplier s) {
+		return dao.slist(s);
 	}
 
 }

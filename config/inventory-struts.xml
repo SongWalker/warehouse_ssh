@@ -5,9 +5,16 @@
 	<constant name="struts.action.extension" value="action" /> 
 	<constant name="struts.objectFactory" value="spring" /> 
 	
-	<package name="inventory" namespace="/inventory" extends="struts-default">
+	<package name="inventory" extends="struts-default">
+        <interceptors>  
+        <interceptor name="LogInterceptor" class="edu.team4.warehouse.Util.LogInterceptor"></interceptor>  
+        </interceptors>  
+           
 	 	<action name="list" class="inventoryAction" method="list">  
-            <result name="list">/inventory/inventory/inventoryList.jsp</result>  
+            <result name="list">/inventory/inventory/inventoryList.jsp</result> 
+            
+           <interceptor-ref name="LogInterceptor"></interceptor-ref>    <!--  -->
+            <result name="uncess">/login/login.jsp</result>
         </action> 
         
         <action name="add" class="inventoryAction" method="add">  
@@ -24,6 +31,7 @@
 	</package>
 	
 	<package name="record" namespace="/record" extends="struts-default">
+    
 	 	<action name="list" class="recordAction" method="list">  
             <result name="list">/inventory/record/recordList.jsp</result>  
         </action> 

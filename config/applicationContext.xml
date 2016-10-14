@@ -52,6 +52,7 @@
 	<bean id="storeservices"
 		class="edu.team4.warehouse.storereturn.services.implement.storeservices">
 		<property name="dao" ref="storedao"></property>
+		<property name="recordService" ref="recordService"></property>
 	</bean>
 
 	<bean id="storeactions" class="edu.team4.warehouse.storereturn.actions.storeactions"
@@ -66,6 +67,7 @@
 	<bean id="sellservices"
 		class="edu.team4.warehouse.sellreturn.services.implement.sellservices">
 		<property name="dao" ref="selldao"></property>
+		
 	</bean>
 
 	<bean id="sellactions" class="edu.team4.warehouse.sellreturn.actions.sellactions"

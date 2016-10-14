@@ -14,28 +14,28 @@
             <column name="s_id" />
         </property>
         <property name="smNo" type="java.lang.String">
-            <column name="sm_no" length="30" not-null="true" />
+            <column name="sm_no" length="30" />
         </property>
         <property name="smSum" type="java.lang.Float">
-            <column name="sm_sum" precision="8" not-null="true" />
+            <column name="sm_sum" precision="8" />
         </property>
         <property name="smReceive" type="java.lang.String">
-            <column name="sm_receive" length="50" not-null="true" />
+            <column name="sm_receive" length="50" />
         </property>
         <property name="smSname" type="java.lang.String">
-            <column name="sm_sname" length="100" not-null="true" />
+            <column name="sm_sname" length="100" />
         </property>
         <property name="smStdate" type="java.util.Date">
-            <column name="sm_stdate" length="10" not-null="true" />
+            <column name="sm_stdate" length="10" />
         </property>
         <property name="smUser" type="java.lang.String">
-            <column name="sm_user" length="30" not-null="true" />
+            <column name="sm_user" length="30" />
         </property>
         <property name="smCalculate" type="java.lang.String">
-            <column name="sm_calculate" length="10" not-null="true" />
+            <column name="sm_calculate" length="10" />
         </property>
         <property name="smState" type="java.lang.Integer">
-            <column name="sm_state" not-null="true" />
+            <column name="sm_state" />
         </property>
     </class>
 </hibernate-mapping>

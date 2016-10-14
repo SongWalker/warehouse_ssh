@@ -27,20 +27,6 @@ public class Tbstoremain implements java.io.Serializable {
 	public Tbstoremain() {
 	}
 
-	/** minimal constructor */
-	public Tbstoremain(String smNo, Float smSum, String smReceive,
-			String smSname, Date smStdate, String smUser, String smCalculate,
-			Integer smState) {
-		this.smNo = smNo;
-		this.smSum = smSum;
-		this.smReceive = smReceive;
-		this.smSname = smSname;
-		this.smStdate = smStdate;
-		this.smUser = smUser;
-		this.smCalculate = smCalculate;
-		this.smState = smState;
-	}
-
 	/** full constructor */
 	public Tbstoremain(Integer SId, String smNo, Float smSum, String smReceive,
 			String smSname, Date smStdate, String smUser, String smCalculate,

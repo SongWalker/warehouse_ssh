@@ -333,7 +333,7 @@
 				<td>
 					<select name="store.smSname" value="${store.smSname}">
 						<s:iterator value="#request.slist" var="item">
-							<option value="${item.SName}" <s:if test="store.smSname==#item.SName"> selected="selected"</s:if>>
+							<option value="${item.SName}" >
 								${item.SName}
 							</option>
 						</s:iterator>								
@@ -357,7 +357,7 @@
 				<td>
 					<select name="store.smUser" value="${store.smUser}">
 						<s:iterator value="#request.ulist" var="item">
-							<option value="${item.UName}" <s:if test="store.smUser==#item.UName"> selected="selected"</s:if>>
+							<option value="${item.UName}">  
 								${item.UName}						 
 							</option>
 						</s:iterator>

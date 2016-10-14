@@ -134,6 +134,7 @@ public class storeactions extends ActionSupport {
 	public String alist(){
 		slist=service.slist(s);
 		ulist=service.ulist(u);
+		//System.out.println(slist.get(1).getSName());
 		return "alist";
 	}
 

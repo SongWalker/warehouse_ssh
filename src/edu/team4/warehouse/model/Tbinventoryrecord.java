@@ -26,17 +26,6 @@ public class Tbinventoryrecord implements java.io.Serializable {
 	public Tbinventoryrecord() {
 	}
 
-	/** minimal constructor */
-	public Tbinventoryrecord(String idNo, String idGname, String idUnit,
-			Integer idNum, Timestamp idDate, Integer idState) {
-		this.idNo = idNo;
-		this.idGname = idGname;
-		this.idUnit = idUnit;
-		this.idNum = idNum;
-		this.idDate = idDate;
-		this.idState = idState;
-	}
-
 	/** full constructor */
 	public Tbinventoryrecord(Integer IId, String idNo, String idGname,
 			String idUnit, Integer idNum, Timestamp idDate, String idDes,

@@ -25,6 +25,7 @@
 	<bean id="recordService"
 		class="edu.team4.warehouse.inventory.services.impl.recordService">
 		<property name="dao" ref="recordDao"></property>
+		<property name="goodsDao" ref="goodsDao"></property>
 	</bean>
 
 	<bean id="recordAction" class="edu.team4.warehouse.inventory.actions.recordAction"

@@ -30,17 +30,6 @@ public class Tbgoodsinfo implements java.io.Serializable {
 	public Tbgoodsinfo() {
 	}
 
-	/** minimal constructor */
-	public Tbgoodsinfo(String GNo, String GGtname, String GName, String GUnit,
-			String GStandard, Integer GState) {
-		this.GNo = GNo;
-		this.GGtname = GGtname;
-		this.GName = GName;
-		this.GUnit = GUnit;
-		this.GStandard = GStandard;
-		this.GState = GState;
-	}
-
 	/** full constructor */
 	public Tbgoodsinfo(Integer gtId, String GNo, String GGtname, String GName,
 			String GShname, String GOrigin, String GUnit, String GStandard,

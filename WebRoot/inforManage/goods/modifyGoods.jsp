@@ -324,7 +324,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										商品简称
 									</td>
 									<td>
-										<input type="text" name="tbgoods.GSname" value="${tbgoods.GSname}" />
+										<input type="text" name="tbgoods.GShname" value="${tbgoods.GShname}" />
 									</td>
 								</tr>
 								<tr>
@@ -383,6 +383,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<input type="text" name="tbgoods.GRemark"  value="${tbgoods.GRemark}" />
 									</td>
 								</tr>
+								
 								<tr>
 									<td style="width: 30%; text-align: right">
 										供应商
@@ -392,6 +393,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									</td>
 								</tr>
 								<tr>
+								
+								 <!-- 
+								 <tr>
+									<td style="width: 30%; text-align: right">
+										供应商：
+									</td>
+									<td>
+										<select name="tbgoods.GSname">
+											<s:iterator value="#request.slist" var="item">
+												<option value="${item.SName}">
+													${item.SName}
+												</option>
+											</s:iterator>
+										</select>
+									</td>
+								</tr>
+								 -->
 									<td style="width: 30%; text-align: right">
 										备注
 									</td>
@@ -401,7 +419,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                         		可用
                                     		</option>
                                     		<option value="0">
-		                                        不可用
+		                                                                                                         不可用
 		                                    </option>
                        			 		</select>
 									</td>	 
